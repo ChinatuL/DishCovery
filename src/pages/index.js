@@ -1,0 +1,12 @@
+export { default as About } from "./About";
+export { default as Error } from "./Error";
+export { default as HomeLayout } from "./HomeLayout";
+export { default as Menu } from "./Menu";
+export { default as MenuItem } from "./MenuItem";
+export { default as NewsLetter } from "./NewsLetter";
+export { default as PrivacyPolicy } from "./PrivacyPolicy";
+export { default as Recipes } from "./Recipes";
+export { default as Recipe } from "./Recipe";
+export { default as TermsOfUse } from "./TermsOfUse";
+export { default as Wines } from "./Wines";
+export { default as Wine } from "./Wine";
