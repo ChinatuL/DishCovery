@@ -1,8 +1,12 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 const HomeLayout = () => {
     return (
         <>
-            <h1 className='text-3xl underline font-bold'>Home</h1>
+            <header>
+                <Navbar />
+            </header>
+            
             <Outlet />
         </>
     );
