@@ -13,13 +13,14 @@ const NavLinks = () => {
             {links.map((link) => {
                 const { id, url, text } = link;
                 return (
-                    <li key={id} className='group'>
+                    <li key={id} className='group px-4'>
                         <NavLink
                             to={url}
-                            className='capitalize text-lg font-light tracking-widest transition-all duration-300 group-hover:bg-neutral-100 py-2 px-4 rounded-md'
+                            className='capitalize text-lg font-light tracking-widest py-2 transition-all duration-300 group-hover:opacity-70 md:group-hover:opacity-100'
                         >
                             {text}
                         </NavLink>
+                        <div className='h-[2px] w-0 bg-zinc-950 transition-all duration-300 md:group-hover:w-full'></div>
                     </li>
                 );
             })}
