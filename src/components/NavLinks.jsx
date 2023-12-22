@@ -7,7 +7,7 @@ const links = [
     { id: 4, url: "/wines", text: "wines" },
     { id: 5, url: "/newsletter", text: "newsletter" },
 ];
-const NavLinks = () => {
+const NavLinks = (toggleNavbar) => {
     return (
         <>
             {links.map((link) => {
@@ -15,6 +15,7 @@ const NavLinks = () => {
                 return (
                     <li key={id} className='group px-4 w-fit'>
                         <NavLink
+                            onClick={toggleNavbar}
                             to={url}
                             className='capitalize text-lg font-light tracking-widest py-2 transition-all duration-300 group-hover:opacity-70'
                         >

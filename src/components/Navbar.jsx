@@ -20,7 +20,12 @@ const Navbar = () => {
                 </ul>
             </nav>
             <div className='relative z-20 md:hidden' onClick={toggleNavbar}>
-                <Hamburger size={28} label='Open Navigation' />
+                <Hamburger
+                    size={28}
+                    label='Open Navigation'
+                    toggled={isOpen}
+                    toggle={toggleNavbar}
+                />
             </div>
             <nav
                 className={`mobile-navigation fixed top-0 right-0 pt-14 pl-4 bg-white/50 z-10 h-full transition-all duration-500 ease-in-out backdrop-blur-sm md:hidden ${
@@ -28,7 +33,7 @@ const Navbar = () => {
                 }`}
             >
                 <ul className='navlinks flex flex-col gap-y-8'>
-                    <NavLinks />
+                    <NavLinks toggleNavbar={toggleNavbar} />
                 </ul>
             </nav>
         </>
