@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { SectionTitle, Services } from "../components";
 import aboutImg from "../assets/images/about.jpg";
-import { services } from "../utils";
+import { services } from "../utils/data";
 
 const About = () => {
     return (
@@ -12,7 +12,7 @@ const About = () => {
                 <img
                     src={aboutImg}
                     alt=''
-                    className='h-96 w-full object-cover rounded-lg mt-4'
+                    className='md:h-96 w-full object-cover rounded-lg mt-4'
                 />
                 <p className='pt-4 text-justify'>
                     Welcome to DishCovery, where passion for food meets the art
@@ -48,7 +48,7 @@ const About = () => {
                 </section>
                 <section className='flex flex-col gap-4'>
                     <SectionTitle size='text-3xl' text='What We Do' />
-                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-12'>
+                    <div className='grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-12'>
                         {services.map((service) => {
                             return <Services key={service.id} {...service} />;
                         })}
@@ -57,7 +57,7 @@ const About = () => {
                 <section className='flex flex-col gap-4'>
                     <SectionTitle
                         size='text-3xl'
-                        text="Subscribe to DishCovery's NewsLetter"
+                        text="Our NewsLetter"
                     />
                     <p>
                         Stay in the loop with the latest culinary trends,

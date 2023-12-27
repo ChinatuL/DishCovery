@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import { images, descriptions } from "../utils";
+import { images, descriptions } from "../utils/data";
 import { LandingSection } from "../components";
 const Landing = () => {
     return (

@@ -1,12 +1,12 @@
-import menu1 from "./assets/images/menu1.jpg";
-import menu2 from "./assets/images/menu2.jpg";
-import recipes1 from "./assets/images/recipes1.jpg";
-import recipes2 from "./assets/images/recipes2.jpg";
-import wines1 from "./assets/images/wines1.jpg";
-import wines2 from "./assets/images/wines2.jpg";
-import aboutMenu from "./assets/images/about-menu.jpg";
-import aboutRecipes from "./assets/images/about-recipes.jpg";
-import aboutWines from "./assets/images/about-wines.jpg";
+import menu1 from "../assets/images/menu1.jpg";
+import menu2 from "../assets/images/menu2.jpg";
+import recipes1 from "../assets/images/recipes1.jpg";
+import recipes2 from "../assets/images/recipes2.jpg";
+import wines1 from "../assets/images/wines1.jpg";
+import wines2 from "../assets/images/wines2.jpg";
+import aboutMenu from "../assets/images/about-menu.jpg";
+import aboutRecipes from "../assets/images/about-recipes.jpg";
+import aboutWines from "../assets/images/about-wines.jpg";
 
 export const images = [menu1, menu2, recipes1, recipes2, wines1, wines2];
 
