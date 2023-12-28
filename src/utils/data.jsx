@@ -8,7 +8,26 @@ import aboutMenu from "../assets/images/about-menu.jpg";
 import aboutRecipes from "../assets/images/about-recipes.jpg";
 import aboutWines from "../assets/images/about-wines.jpg";
 
+import {
+    FaLocationDot,
+    FaEnvelope,
+    FaTiktok,
+    FaInstagram,
+    FaXTwitter,
+    FaFacebookF,
+    FaYoutube,
+} from "react-icons/fa6";
+import { BsFillTelephoneFill } from "react-icons/bs";
+
 export const images = [menu1, menu2, recipes1, recipes2, wines1, wines2];
+
+export const links = [
+    { id: 1, url: "/about", text: "about" },
+    { id: 2, url: "/menu", text: "menu" },
+    { id: 3, url: "/recipes", text: "recipes" },
+    { id: 4, url: "/wines", text: "wines" },
+    { id: 5, url: "/newsletter", text: "newsletter" },
+];
 
 export const descriptions = [
     "Savor a symphony of tastes that have been carefully chosen for you. Our menu is a culinary journey that will not disappoint, with everything from flavorful appetizers to tantalizing main courses. Every dish has a backstory, and every taste invites you to savor something exceptional. Prepare yourself for a culinary journey; your next mouthwatering dinner is about to arrive.",
@@ -35,4 +54,18 @@ export const services = [
         image: aboutWines,
         text: "Elevate your dining experience with our thoughtfully chosen wine selection. Each bottle is a journey in itself, complementing the richness of our dishes to perfection.",
     },
+];
+
+export const contactInfo = [
+    { id: 1, icon: <FaLocationDot />, text: "Lagos, Nigeria" },
+    { id: 2, icon: <BsFillTelephoneFill />, text: "+234 123 4567 8901" },
+    { id: 3, icon: <FaEnvelope />, text: "dishcovery.meal@gmail.com" },
+];
+
+export const socialLinks = [
+    { id: 1, icon: <FaYoutube />, url: "https://www.youtube.com/" },
+    { id: 2, icon: <FaXTwitter />, url: "https://www.twitter.com/" },
+    { id: 3, icon: <FaTiktok />, url: "https://www.tiktok.com/en/" },
+    { id: 4, icon: <FaInstagram />, url: "https://www.instagram.com/" },
+    { id: 5, icon: <FaFacebookF />, url: "https://www.facebook.com/" },
 ];

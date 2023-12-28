@@ -1,12 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { links } from "../utils/data";
 
-const links = [
-    { id: 1, url: "/about", text: "about" },
-    { id: 2, url: "/menu", text: "menu" },
-    { id: 3, url: "/recipes", text: "recipes" },
-    { id: 4, url: "/wines", text: "wines" },
-    { id: 5, url: "/newsletter", text: "newsletter" },
-];
 const NavLinks = (toggleNavbar) => {
     return (
         <>
