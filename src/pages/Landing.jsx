@@ -3,12 +3,11 @@ import { images, descriptions } from "../utils/data";
 import { customFetch, apiKey } from "../utils/utils";
 import { LandingSection, FeaturedRecipes } from "../components";
 
-const url = `/recipes/random?apiKey=${apiKey}&number=8`;
+const url = `/recipes/random?apiKey=${apiKey}&number=9`;
 
 export const loader = async () => {
     const response = await customFetch(url);
     const recipes = response.data.recipes;
-    console.log(recipes);
     return { recipes };
 };
 
@@ -37,6 +36,7 @@ const Landing = () => {
                     size='text-3xl'
                     text='Our Recipes'
                 />
+                <FeaturedRecipes />
                 <LandingSection
                     description={descriptions[2]}
                     img1={images[4]}
