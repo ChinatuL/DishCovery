@@ -5,8 +5,14 @@ import { LandingSection, FeaturedRecipes } from "../components";
 
 const url = `/recipes/random?apiKey=${apiKey}&number=9`;
 
-export const loader = async () => {
-    const response = await customFetch(url);
+const featuredRecipesQuery = {
+    queryKey: ["featuredRecipes"],
+    queryFn: () => customFetch(url),
+};
+
+export const loader = (queryClient) => async () => {
+    const response = await queryClient.ensureQueryData(featuredRecipesQuery);
+    console.log(response);
     const recipes = response.data.recipes;
     return { recipes };
 };
