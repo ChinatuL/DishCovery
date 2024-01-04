@@ -11,7 +11,7 @@ const NewsLetter = () => {
     };
 
     return (
-        <div className='flex flex-col mx-auto h-96 gap-4 mt-8 px-8 py-8 bg-white rounded-lg shadow-md w-96 hover:shadow-lg'>
+        <div className='flex flex-col mx-auto h-96 gap-4 mt-8 px-8 py-8 bg-white rounded-lg shadow-md w-[90vw] md:w-96  hover:shadow-lg'>
             <h1 className='text-3xl text-center font-medium'>
                 Hungry for more?
             </h1>
