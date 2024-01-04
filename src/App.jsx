@@ -69,16 +69,15 @@ const router = createBrowserRouter([
                 path: "wines/:id",
                 element: <Wine />,
             },
+            {
+                path: "newsletter",
+                element: <NewsLetter />,
+            },
         ],
     },
     {
         path: "/privacy-policy",
         element: <PrivacyPolicy />,
-        errorElement: <Error />,
-    },
-    {
-        path: "/newsletter",
-        element: <NewsLetter />,
         errorElement: <Error />,
     },
     {
