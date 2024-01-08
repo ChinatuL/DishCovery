@@ -1,10 +1,9 @@
-import { useLoaderData, Link } from "react-router-dom";
-const GridLayout = () => {
-    const { recipes } = useLoaderData();
+import { Link } from "react-router-dom";
+const GridLayout = ({ items }) => {
     return (
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[1fr]'>
-            {recipes.map((recipe) => {
-                const { id, title, image } = recipe;
+            {items.map((item) => {
+                const { id, title, image } = item;
                 return (
                     <Link
                         key={id}

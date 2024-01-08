@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import { images, descriptions } from "../utils/data";
 import { customFetch, apiKey } from "../utils/utils";
 import { LandingSection, FeaturedRecipes } from "../components";
+import { useLoaderData } from "react-router-dom";
 
 const url = `/recipes/random?apiKey=${apiKey}&number=9`;
 
@@ -18,6 +19,7 @@ export const loader = (queryClient) => async () => {
 };
 
 const Landing = () => {
+    const { recipes } = useLoaderData();
     return (
         <div>
             <Hero />
@@ -42,7 +44,7 @@ const Landing = () => {
                     size='text-3xl'
                     text='Our Recipes'
                 />
-                <FeaturedRecipes />
+                <FeaturedRecipes items={recipes} />
                 <LandingSection
                     description={descriptions[2]}
                     img1={images[4]}

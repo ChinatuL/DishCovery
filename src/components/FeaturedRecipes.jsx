@@ -1,10 +1,10 @@
 import GridLayout from "./GridLayout"
 import SectionTitle from "./SectionTitle"
-const FeaturedRecipes = () => {
+const FeaturedRecipes = ({items}) => {
   return (
       <>
           <SectionTitle size='text-3xl' text='Featured Recipes' />
-          <GridLayout />
+          <GridLayout items={items} />
       </>
   );
 }
