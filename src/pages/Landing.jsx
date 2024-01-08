@@ -44,7 +44,7 @@ const Landing = () => {
                     size='text-3xl'
                     text='Our Recipes'
                 />
-                <FeaturedRecipes items={recipes} />
+                <FeaturedRecipes items={recipes} path="recipes" />
                 <LandingSection
                     description={descriptions[2]}
                     img1={images[4]}

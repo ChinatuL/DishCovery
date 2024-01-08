@@ -21,6 +21,7 @@ import {
 import { loader as LandingLoader } from "./pages/Landing";
 import { loader as RecipeLoader } from "./pages/Recipe";
 import { loader as RecipesLoader } from "./pages/Recipes";
+import { loader as MenuLoader } from "./pages/Menu";
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -48,6 +49,7 @@ const router = createBrowserRouter([
             {
                 path: "menu",
                 element: <Menu />,
+                loader: MenuLoader(queryClient),
             },
             {
                 path: "menu/:id",

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-const GridLayout = ({ items }) => {
+const GridLayout = ({ items, path }) => {
     return (
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[1fr]'>
             {items.map((item) => {
@@ -7,7 +7,7 @@ const GridLayout = ({ items }) => {
                 return (
                     <Link
                         key={id}
-                        to={`/recipes/${id}`}
+                        to={`/${path}/${id}`}
                         className='bg-white pt-4 pb-2 px-6 shadow-md hover:shadow-2xl rounded-lg transition-all duration-300 ease-in-out'
                     >
                         <div>
