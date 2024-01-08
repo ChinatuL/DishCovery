@@ -5,3 +5,4 @@ export { default as Services } from "./Services";
 export { default as Footer } from "./Footer";
 export { default as FeaturedRecipes } from "./FeaturedRecipes";
 export { default as GridLayout } from "./GridLayout";
+export { default as SearchForm } from "./SearchForm";
