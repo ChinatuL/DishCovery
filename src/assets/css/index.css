@@ -16,4 +16,8 @@
     .wines img {
         @apply object-contain;
     }
+
+    .search-bar::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
 }

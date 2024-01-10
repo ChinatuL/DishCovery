@@ -5,7 +5,7 @@ const GridLayout = ({ items, path }) => {
             {items.map((item) => {
                 const { id, title, image, imageUrl } = item;
                 // skip items whose image links are broken
-                if (image.includes("file")) {
+                if (image && image.includes("file")) {
                     return null;
                 }
                 return (
