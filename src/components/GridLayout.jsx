@@ -4,6 +4,10 @@ const GridLayout = ({ items, path }) => {
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[1fr]'>
             {items.map((item) => {
                 const { id, title, image, imageUrl } = item;
+                // skip items whose image links are broken
+                if (image.includes("file")) {
+                    return null;
+                }
                 return (
                     <Link
                         key={id}

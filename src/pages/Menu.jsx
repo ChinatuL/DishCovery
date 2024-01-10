@@ -7,7 +7,7 @@ const menuQuery = (searchTerm) => {
         queryKey: ["menu", searchTerm || "pasta"],
         queryFn: () =>
             customFetch(
-                `/food/menuItems/search?query=${searchTerm}&number=6&apiKey=${apiKey}`
+                `/food/menuItems/search?query=${searchTerm}&number=12&apiKey=${apiKey}`
             ),
     };
 };
@@ -20,7 +20,7 @@ export const loader =
         const response = await queryClient.ensureQueryData(
             menuQuery(searchTerm)
         );
-        const menu = response.data.menuItems;
+      const menu = response.data.menuItems;
         return { menu, searchTerm };
     };
 
