@@ -74,6 +74,7 @@ const router = createBrowserRouter([
             {
                 path: "wines/:id",
                 element: <Wine />,
+                loader: WinesLoader(queryClient),
             },
             {
                 path: "newsletter",
