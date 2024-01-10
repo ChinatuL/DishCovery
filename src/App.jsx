@@ -22,6 +22,7 @@ import { loader as LandingLoader } from "./pages/Landing";
 import { loader as RecipeLoader } from "./pages/Recipe";
 import { loader as RecipesLoader } from "./pages/Recipes";
 import { loader as MenuLoader } from "./pages/Menu";
+import { loader as MenuItemLoader } from "./pages/MenuItem";
 import { loader as WinesLoader } from "./pages/Wines";
 
 const queryClient = new QueryClient({
@@ -55,6 +56,7 @@ const router = createBrowserRouter([
             {
                 path: "menu/:id",
                 element: <MenuItem />,
+                loader: MenuItemLoader(queryClient),
             },
             {
                 path: "recipes",
