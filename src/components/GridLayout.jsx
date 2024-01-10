@@ -3,7 +3,7 @@ const GridLayout = ({ items, path }) => {
     return (
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[1fr]'>
             {items.map((item) => {
-                const { id, title, image } = item;
+                const { id, title, image, imageUrl } = item;
                 return (
                     <Link
                         key={id}
@@ -12,9 +12,9 @@ const GridLayout = ({ items, path }) => {
                     >
                         <div>
                             <img
-                                src={image}
+                                src={image || imageUrl}
                                 alt={title}
-                                className='rounded-xl h-64 md:h-48 w-full object-cover '
+                                className='rounded-xl h-64 md:h-48 w-full object-cover'
                             />
                             <p className='text-center text-lg py-2'>{title}</p>
                         </div>

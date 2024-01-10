@@ -12,4 +12,8 @@
     .navlinks a.active {
         @apply font-bold;
     }
+
+    .wines img {
+        @apply object-contain;
+    }
 }
