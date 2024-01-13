@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
-import { customFetch, apiKey } from "../utils/utils";
-import { MdTimer } from "react-icons/md";
 import { BiSolidDish } from "react-icons/bi";
+import { MdTimer } from "react-icons/md";
+import { SectionTitle } from "../components";
+import { customFetch, apiKey } from "../utils/utils";
 
 const singleRecipeQuery = (id) => {
     return {
@@ -18,7 +19,6 @@ export const loader =
             singleRecipeQuery(params.id)
         );
         const recipe = response.data;
-        console.log(response);
         return { recipe };
     };
 
@@ -70,8 +70,8 @@ const Recipe = () => {
                 </p>
             </div>
             {winePairing && (
-                <section className='flex flex-col gap-2'>
-                    <h2 className='text-2xl font-semibold'>Wine Pairing</h2>
+          <section className='flex flex-col gap-2'>
+                    <SectionTitle size="text-2xl" text='Wine Pairing' />
                     <div className='text-lg tracking-wider'>
                         <p>
                             <span> {title} can be paired with</span>
@@ -91,8 +91,8 @@ const Recipe = () => {
                 </section>
             )}
             <div className='grid md:grid-cols-2 gap-4 text-lg tracking-wider'>
-                <section className='flex flex-col gap-2'>
-                    <h2 className='text-2xl font-semibold'>Ingredients</h2>
+          <section className='flex flex-col gap-2'>
+                    <SectionTitle size="text-2xl" text='Ingredients' />
                     <ol>
                         {extendedIngredients.map((ingredient) => {
                             const { id, original } = ingredient;
@@ -104,8 +104,8 @@ const Recipe = () => {
                         })}
                     </ol>
                 </section>
-                <section className='flex flex-col gap-2'>
-                    <h2 className='text-2xl font-semibold'>Directions</h2>
+          <section className='flex flex-col gap-2'>
+                    <SectionTitle size="text-2xl" text='Directions' />
                     <div className='flex flex-col gap-2'>
                         {steps.map((item) => {
                             const { number, step } = item;

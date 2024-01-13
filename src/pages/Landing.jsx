@@ -1,8 +1,7 @@
-import Hero from "../components/Hero";
+import { useLoaderData } from "react-router-dom";
+import { LandingSection, FeaturedRecipes, Hero } from "../components";
 import { images, descriptions } from "../utils/data";
 import { customFetch, apiKey } from "../utils/utils";
-import { LandingSection, FeaturedRecipes } from "../components";
-import { useLoaderData } from "react-router-dom";
 
 const url = `/recipes/random?apiKey=${apiKey}&number=9`;
 
@@ -44,7 +43,7 @@ const Landing = () => {
                     size='text-3xl'
                     text='Our Recipes'
                 />
-                <FeaturedRecipes items={recipes} path="recipes" />
+                <FeaturedRecipes items={recipes} path='recipes' />
                 <LandingSection
                     description={descriptions[2]}
                     img1={images[4]}

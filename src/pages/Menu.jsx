@@ -20,17 +20,17 @@ export const loader =
         const response = await queryClient.ensureQueryData(
             menuQuery(searchTerm)
         );
-      const menu = response.data.menuItems;
+        const menu = response.data.menuItems;
         return { menu, searchTerm };
     };
 
 const Menu = () => {
-  const {menu, searchTerm} = useLoaderData();
-  return (
-      <div className='px-4 lg:px-20 pt-8 flex flex-col gap-8'>
-          <SearchForm searchTerm={searchTerm} />
-          <GridLayout items={menu} path='menu' />
-      </div>
-  );
+    const { menu, searchTerm } = useLoaderData();
+    return (
+        <div className='px-4 lg:px-20 pt-8 flex flex-col gap-8'>
+            <SearchForm searchTerm={searchTerm} />
+            <GridLayout items={menu} path='menu' />
+        </div>
+    );
 };
 export default Menu;

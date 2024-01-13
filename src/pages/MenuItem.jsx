@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import { customFetch, apiKey } from "../utils/utils";
+import SectionTitle from "../components/SectionTitle";
 
 const menuItemQuery = (id) => {
     return {
@@ -66,10 +67,8 @@ const MenuItem = () => {
                         })}
                     </div>
                 </div>
-                <div>
-                    <h2 className='text-xl font-semibold mb-4'>
-                        Nutritional Information
-                    </h2>
+          <div>
+            <SectionTitle size="text-xl" text="Nutritional Information" />
                     <table className='mt-4 table-auto border-collapse border border-zinc-950'>
                         <thead>
                             <tr>

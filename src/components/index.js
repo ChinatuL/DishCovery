@@ -6,4 +6,5 @@ export { default as Footer } from "./Footer";
 export { default as FeaturedRecipes } from "./FeaturedRecipes";
 export { default as GridLayout } from "./GridLayout";
 export { default as SearchForm } from "./SearchForm";
-export {default as Loading} from "./Loading";
+export { default as Loading } from "./Loading";
+export {default as Hero} from "./Hero";

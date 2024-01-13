@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import ContactInfo from "./ContactInfo";
 import SocialLinks from "./SocialLinks";
-import { Link } from "react-router-dom";
 import { links } from "../utils/data";
 const Footer = () => {
     return (

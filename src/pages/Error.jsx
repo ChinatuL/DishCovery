@@ -31,7 +31,9 @@ const Error = () => {
                     </>
                 ) : (
                     <>
-                        <h1 className="text-4xl font-semibold">An error occured... Try again</h1>
+                        <h1 className='text-4xl font-semibold'>
+                            An error occured... Try again
+                        </h1>
                     </>
                 )}
             </div>

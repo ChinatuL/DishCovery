@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import SectionTitle from "../components/SectionTitle";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import SectionTitle from "../components/SectionTitle";
 const TermsOfUse = () => {
     return (
         <div className='flex flex-col justify-center items-center gap-8 mx-auto px-4 lg:px-0 py-8 text-xl lg:w-8/12'>

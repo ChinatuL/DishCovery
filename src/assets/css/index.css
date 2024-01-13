@@ -29,11 +29,11 @@
       @apply border border-zinc-500 px-2;
     }
 
-    .animate1 {
+    .loader1 {
       animation: animate1 700ms ease-in-out infinite alternate;
     }
 
-    .animate2 {
+    .loader2 {
       animation: animate2 700ms ease-in-out infinite alternate;
     }
 
