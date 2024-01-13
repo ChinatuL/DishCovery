@@ -20,4 +20,12 @@
     .search-bar::-webkit-search-cancel-button {
         -webkit-appearance: none;
     }
+
+    table th {
+      @apply border border-zinc-500 text-left px-2 bg-slate-50;
+    }
+
+    table td {
+      @apply border border-zinc-500 px-2;
+    }
 }
