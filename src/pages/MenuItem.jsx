@@ -32,9 +32,9 @@ const MenuItem = () => {
     return (
         <div className=' px-4 lg:px-20 pt-8'>
             <h1 className='text-3xl text-center font-semibold mb-6'>{title}</h1>
-            <div className='flex items-center justify-evenly gap-8'>
+            <div className='flex flex-col lg:flex-row items-center justify-evenly gap-8'>
                 <div className='flex flex-col items-center'>
-                    <div className='flex gap-1 mt-4 bg-slate-100 w-max px-4 py-2'>
+                    <div className='flex flex-wrap gap-1 mt-4 bg-slate-100 w-max px-4 py-2'>
                         {breadcrumbs.map((breadcrumb, index) => {
                             return (
                                 <p
@@ -52,7 +52,7 @@ const MenuItem = () => {
                         alt={title}
                         className='w-96 object-contain'
                     />
-                    <div className='flex gap-4'>
+                    <div className='flex flex-wrap gap-4'>
                         {nutritionArray.map((nutrition) => {
                             return (
                                 <div
