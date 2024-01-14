@@ -18,7 +18,7 @@ Axios
 TailwindCss
 
 ## Demo
-
+[DishCovery demo.webm](https://github.com/ChinatuL/DishCovery/assets/97689140/07e35a01-79b3-4951-9bbc-f69f7eaf649b)
 
 ## Live Site
 The live site for DishCovery is [https://dishcovery.netlify.app/](https://dishcovery.netlify.app/)
