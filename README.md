@@ -1,8 +1,46 @@
-# React + Vite
+# DishCovery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DishCovery is a React based food website that allows users to search for and view varieties of menus, recipes and wines. It was built using the [Spoonacular API](https://spoonacular.com/food-api)
 
-Currently, two official plugins are available:
+## Features
+- Users can search for menu items, recipes and wines.
+- Users can view varieties of menu items, recipes and wines in detail. 
+- Users can subscribe to a newsletter.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+React
+React Router
+React Query
+React Icons
+React Toastify
+Harmburger React
+Axios
+TailwindCss
+
+## Demo
+
+
+## Live Site
+The live site for DishCovery is [https://dishcovery.netlify.app/](https://dishcovery.netlify.app/)
+
+## Installation and Setup
+1. Clone the project
+```bash
+  git clone https://github.com/ChinatuL/DishCovery.git
+```
+2. Go to project directory
+```bash
+  cd DishCovery
+```
+3. Install dependencies
+```bash
+  npm install
+```
+4. Start local server
+```bash
+  npm run dev
+```
+Your application should be running on [http://localhost:5173](http://localhost:5173) 
+
+## Author
+- [@chinatulucia](https://www.linkedin.com/in/chinatuluciaeke/)
