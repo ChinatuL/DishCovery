@@ -28,7 +28,7 @@ const Wines = () => {
   const { wines, searchTerm } = useLoaderData();
     return (
         <div className='wines px-4 lg:px-20 pt-8 flex flex-col gap-8'>
-            <SearchForm searchTerm={searchTerm} placeholder='Search wines' />
+            <SearchForm placeholder='Search wines' />
             <GridLayout items={wines} path='wines' />
         </div>
     );

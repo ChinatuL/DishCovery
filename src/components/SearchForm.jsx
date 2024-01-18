@@ -8,7 +8,6 @@ const SearchForm = ({ searchTerm, placeholder }) => {
                     type='search'
                     id='search'
                     name='search'
-                    defaultValue={searchTerm}
                     placeholder={placeholder}
                     className='search-bar border border-zinc-950 w-full h-9 px-4 rounded-md focus:outline-none focus:border-2'
                 />

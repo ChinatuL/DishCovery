@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const GridLayout = ({ items, path }) => {
     return (
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[1fr]'>
+        <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[1fr]'>
             {items.map((item) => {
                 const { id, title, image, imageUrl } = item;
                 // skip items whose image links are broken
@@ -12,15 +12,17 @@ const GridLayout = ({ items, path }) => {
                     <Link
                         key={id}
                         to={`/${path}/${id}`}
-                        className='bg-white pt-4 pb-2 px-6 shadow-md hover:shadow-2xl rounded-lg transition-all duration-300 ease-in-out'
+                        className='bg-white shadow-md hover:shadow-xl rounded-lg transition-all duration-300 ease-in-out'
                     >
                         <div>
                             <img
                                 src={image || imageUrl}
                                 alt={title}
-                                className='rounded-xl h-64 md:h-48 w-full object-cover'
+                                className='rounded-t-xl h-64 md:h-40 w-full object-cover'
                             />
-                            <p className='text-center text-lg py-2'>{title}</p>
+                            <p className='capitalize font-medium text-lg py-2 px-4'>
+                                {title}
+                            </p>
                         </div>
                     </Link>
                 );
